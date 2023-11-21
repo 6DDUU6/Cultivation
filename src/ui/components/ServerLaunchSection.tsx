@@ -7,7 +7,7 @@ import { getConfig, saveConfig, setConfigOption } from '../../utils/configuratio
 import { translate } from '../../utils/language'
 import { invoke } from '@tauri-apps/api/tauri'
 
-import Server from '../../resources/icons/server.svg'
+//import Server from '../../resources/icons/server.svg'
 import Plus from '../../resources/icons/plus.svg'
 
 import './ServerLaunchSection.css'
