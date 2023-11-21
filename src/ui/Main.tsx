@@ -8,9 +8,9 @@ import Options, { GrasscutterElevation } from './components/menu/Options'
 import MiniDialog from './components/MiniDialog'
 import DownloadList from './components/common/DownloadList'
 import Downloads from './components/menu/Downloads'
-import NewsSection from './components/news/NewsSection'
+//import NewsSection from './components/news/NewsSection'
 import Game from './components/menu/Game'
-import RightBar from './components/RightBar'
+//import RightBar from './components/RightBar'
 import { ExtrasMenu } from './components/menu/ExtrasMenu'
 import Notification from './components/common/Notification'
 import GamePathNotify from './components/menu/GamePathNotify'
@@ -26,7 +26,7 @@ import DownloadHandler from '../utils/download'
 
 // Graphics
 import cogBtn from '../resources/icons/cog.svg'
-import downBtn from '../resources/icons/download.svg'
+//import downBtn from '../resources/icons/download.svg'
 import wrenchBtn from '../resources/icons/wrench.svg'
 
 interface IProps {

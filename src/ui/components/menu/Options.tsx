@@ -17,7 +17,7 @@ import * as meta from '../../../utils/rsa'
 import HelpButton from '../common/HelpButton'
 import SmallButton from '../common/SmallButton'
 import { confirm } from '@tauri-apps/api/dialog'
-import TextInput from '../common/TextInput'
+//import TextInput from '../common/TextInput'
 
 export enum GrasscutterElevation {
   None = 'None',
