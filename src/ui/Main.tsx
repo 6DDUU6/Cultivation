@@ -249,13 +249,13 @@ export class Main extends React.Component<IProps, IState> {
           >
             <img src={cogBtn} alt="settings" />
           </div>
-          <div
+          {/* <div
             id="downloadsBtn"
             className="TopButton"
             onClick={() => this.setState({ downloadsOpen: !this.state.downloadsOpen })}
           >
             <img src={downBtn} alt="downloads" />
-          </div>
+          </div> */}
           {this.state.migotoSet && (
             <div
               id="modsBtn"
@@ -278,9 +278,9 @@ export class Main extends React.Component<IProps, IState> {
 
         {this.state.isGamePathSet ? <></> : <GamePathNotify />}
 
-        <RightBar />
+        {/* <RightBar /> */}
 
-        <NewsSection />
+        {/* <NewsSection /> */}
 
         {
           // Extras section

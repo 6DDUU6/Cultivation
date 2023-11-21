@@ -347,12 +347,12 @@ export default class ServerLaunchSection extends React.Component<IProps, IState>
                 initalValue={this.state.port}
               />
               <HelpButton contents={'help.port_help_text'} />
-              <Checkbox
+              {/* <Checkbox
                 id="httpsEnable"
                 label={this.state.httpsLabel}
                 onChange={this.toggleHttps}
                 checked={this.state.httpsEnabled}
-              />
+              /> */}
             </div>
           </div>
         )}
@@ -366,9 +366,9 @@ export default class ServerLaunchSection extends React.Component<IProps, IState>
               <img className="ExtrasIcon" id="extrasIcon" src={Plus} />
             </BigButton>
           )}
-          <BigButton onClick={this.launchServer} id="serverLaunch">
+          {/* <BigButton onClick={this.launchServer} id="serverLaunch">
             <img className="ServerIcon" id="serverLaunchIcon" src={Server} />
-          </BigButton>
+          </BigButton> */}
         </div>
       </div>
     )

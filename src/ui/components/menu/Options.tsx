@@ -72,7 +72,7 @@ export default class Options extends React.Component<IProps, IState> {
       java_path: '',
       grasscutter_with_game: false,
       language_options: [],
-      current_language: 'en',
+      current_language: 'chs',
       bg_url_or_path: '',
       themes: ['default'],
       theme: '',
@@ -134,7 +134,7 @@ export default class Options extends React.Component<IProps, IState> {
       java_path: config.java_path || '',
       grasscutter_with_game: config.grasscutter_with_game || false,
       language_options: languages,
-      current_language: config.language || 'en',
+      current_language: config.language || 'chs',
       bg_url_or_path: config.custom_background || '',
       themes: (await getThemeList()).map((t) => t.name),
       theme: config.theme || 'default',
@@ -398,7 +398,7 @@ export default class Options extends React.Component<IProps, IState> {
             <DirInput onChange={this.setGameExecutable} value={this.state?.game_install_path} extensions={['exe']} />
           </div>
         </div>
-        <div className="OptionSection" id="menuOptionsContainermetaDownload">
+        {/* <div className="OptionSection" id="menuOptionsContainermetaDownload">
           <div className="OptionLabel" id="menuOptionsLabelmetaDownload">
             <Tr text="options.recover_rsa" />
             <HelpButton contents="help.emergency_rsa" />
@@ -408,7 +408,7 @@ export default class Options extends React.Component<IProps, IState> {
               <Tr text="components.delete" />
             </BigButton>
           </div>
-        </div>
+        </div> */}
         <div className="OptionSection" id="menuOptionsContainerPatchMeta">
           <div className="OptionLabel" id="menuOptionsLabelPatchMeta">
             <Tr text="options.patch_rsa" />
@@ -431,7 +431,7 @@ export default class Options extends React.Component<IProps, IState> {
             />
           </div>
         </div>
-        <div className="OptionSection" id="menuOptionsContainerWipeLogin">
+        {/* <div className="OptionSection" id="menuOptionsContainerWipeLogin">
           <div className="OptionLabel" id="menuOptionsLabelWipeLogin">
             <Tr text="options.wipe_login" />
           </div>
@@ -466,11 +466,11 @@ export default class Options extends React.Component<IProps, IState> {
               id="RedirectMore"
             />
           </div>
-        </div>
+        </div> */}
 
         <Divider />
 
-        <div className="OptionSection" id="menuOptionsContainerGCJar">
+        {/* <div className="OptionSection" id="menuOptionsContainerGCJar">
           <div className="OptionLabel" id="menuOptionsLabelGCJar">
             <Tr text="options.grasscutter_jar" />
           </div>
@@ -486,7 +486,7 @@ export default class Options extends React.Component<IProps, IState> {
           <div className="OptionValue" id="menuOptionsButtonToggleEnc">
             <Checkbox onChange={() => this.toggleEncryption()} checked={this.state.encryption} id="toggleEnc" />
           </div>
-        </div>
+        </div> */}
         <div className="OptionSection" id="menuOptionsContainerInstallCert">
           <div className="OptionLabel" id="menuOptionsLabelInstallCert">
             <Tr text="options.install_certificate" />
@@ -559,7 +559,7 @@ export default class Options extends React.Component<IProps, IState> {
 
         <Divider />
 
-        <div className="OptionSection" id="menuOptionsContainerGCWGame">
+        {/* <div className="OptionSection" id="menuOptionsContainerGCWGame">
           <div className="OptionLabel" id="menuOptionsLabelGCWDame">
             <Tr text="options.grasscutter_with_game" />
           </div>
@@ -634,11 +634,11 @@ export default class Options extends React.Component<IProps, IState> {
               id="useThemeBG"
             />
           </div>
-        </div>
+        </div> */}
 
         <Divider />
 
-        <div className="OptionSection" id="menuOptionsContainerJavaPath">
+        {/* <div className="OptionSection" id="menuOptionsContainerJavaPath">
           <div className="OptionLabel" id="menuOptionsLabelJavaPath">
             <Tr text="options.java_path" />
           </div>
@@ -664,7 +664,7 @@ export default class Options extends React.Component<IProps, IState> {
               }}
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="OptionSection" id="menuOptionsContainerLang">
           <div className="OptionLabel" id="menuOptionsLabelLang">
@@ -689,7 +689,7 @@ export default class Options extends React.Component<IProps, IState> {
 
         <Divider />
 
-        <div className="OptionSection" id="menuOptionsContainerAdvanced">
+        {/* <div className="OptionSection" id="menuOptionsContainerAdvanced">
           <div className="OptionLabel" id="menuOptionsLabelWebCache">
             <Tr text="options.web_cache" />
           </div>
@@ -708,7 +708,7 @@ export default class Options extends React.Component<IProps, IState> {
             onChange={this.setLaunchArgs}
             value={this.state.launch_args}
           />
-        </div>
+        </div> */}
       </Menu>
     )
   }

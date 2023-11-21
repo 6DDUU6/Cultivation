@@ -14,7 +14,7 @@ let defaultConfig: Configuration
     startup_launch: false,
     last_ip: 'localhost',
     last_port: '443',
-    language: 'en',
+    language: 'chs',
     custom_background: '',
     use_theme_background: false,
     cert_generated: false,

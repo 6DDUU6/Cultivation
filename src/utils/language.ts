@@ -16,7 +16,7 @@ export default class Tr extends React.Component<IProps, IState> {
     super(props)
 
     this.state = {
-      language: 'en',
+      language: 'chs',
       translated_text: '',
     }
   }
@@ -26,10 +26,10 @@ export default class Tr extends React.Component<IProps, IState> {
     let language = await getConfigOption('language')
 
     // Get translation file
-    if (!language) language = 'en'
+    if (!language) language = 'chs'
 
     const response = await invoke('get_lang', { lang: language })
-    const default_resp = await invoke('get_lang', { lang: 'en' })
+    const default_resp = await invoke('get_lang', { lang: 'chs' })
 
     const translation_obj = JSON.parse((response as string) || '{}')
     const default_obj = JSON.parse((default_resp as string) || '{}')
@@ -95,9 +95,9 @@ export async function getLanguages() {
 }
 
 export async function translate(text: string) {
-  const language = (await getConfigOption('language')) || 'en'
+  const language = (await getConfigOption('language')) || 'chs'
   const translation_json = JSON.parse((await invoke('get_lang', { lang: language })) || '{}')
-  const default_json = JSON.parse(await invoke('get_lang', { lang: 'en' }))
+  const default_json = JSON.parse(await invoke('get_lang', { lang: 'chs' }))
 
   // Traversal
   if (text.includes('.')) {
